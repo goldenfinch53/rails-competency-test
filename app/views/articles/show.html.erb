@@ -1,5 +1,13 @@
 <div class='articles-show'>
-  <span class='article-title'><%= @article.title %></span>
+  <div class='article-title'><%= @article.title %>
+    <% if current_user.id == @article.user_id %>
+      <div class='article-options'>
+        <%= link_to "Edit Article", edit_article_path(@article) %>
+        <%= link_to "Delete Article", article_path(@article), method: :delete %>
+      </div>
+    <% end %>
+  </div>
+  
   <div class='by-line'>
     <span>By: <%= @article.user.email %></span>
     <span>Category: <%= @article.category %></span>

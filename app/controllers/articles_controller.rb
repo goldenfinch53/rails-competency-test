@@ -28,6 +28,16 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def destroy
+    @article = Article.find(params[:id])
+    authorize @article
+    if @article.destroy
+      redirect_to root_path
+    else
+      redirect_to @article
+    end
+  end
+
   def create
     @article = Article.new
     @article.user_id = current_user.id

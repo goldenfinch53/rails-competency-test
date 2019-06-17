@@ -1,5 +1,5 @@
 class ArticlePolicy
-  attr_reader :user, :post
+  attr_reader :user, :article
 
   def initialize(user, article)
     @user = user
