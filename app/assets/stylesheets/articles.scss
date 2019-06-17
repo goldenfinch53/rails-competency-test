@@ -4,5 +4,31 @@
 
 
 .articles-index{
+  max-width: 1000px;
+  margin: auto;
   padding-top: 48px;
+}
+
+.article{
+  &:hover {
+    background-color: #5680E9
+  }
+  height: 40px;
+  a {
+    text-decoration: none;
+    
+  }
+  .article-title {
+    color: black;
+    font-size: 1.2rem;
+  }
+  .by-line {
+    float:right;
+    color: grey;
+  }
+  
+}
+
+.category{
+  height: 240px;
 }
