@@ -13,8 +13,14 @@
 
   <body>
     <nav>
-      <%= link_to root_path, class: "home-link", data: { turbolinks: false } do %>
+      <%= link_to root_path, class: "home-link" do %>
         <h2>Newsfeed</h2>
+      <% end %>
+
+      <% if user_signed_in? %>
+        <%= link_to 'Sign Out', destroy_user_session_url, method: :delete, class: 'sign-in-out-button' %>
+      <% else %>
+        <%= link_to 'Sign In', new_user_session_path, class: 'sign-in-out-button' %>
       <% end %>
     </nav>
     <%= yield %>

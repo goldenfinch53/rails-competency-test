@@ -1,0 +1,17 @@
+<%= form_for(@article) do |f| %>
+  <div class='field'>
+    <%= label_tag :title %>
+    <%= f.text_field :title, value: @article.title %>
+  </div>
+  <div class='field'>
+    <%= label_tag :category %>
+    <%= f.text_field :category, value: @article.category %>
+  </div>
+  <div class='field'>
+    <%= label_tag :content %>
+    <%= f.text_area :content, value: @article.content %>
+  </div>
+  <div>
+    <%= f.submit "Create Article" %>
+  </div>
+<% end %>
