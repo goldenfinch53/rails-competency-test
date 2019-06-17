@@ -58,7 +58,6 @@ Use [devise](https://github.com/plataformatec/devise) for authentication.
 
 ## Templating
 Use one of these 3 for templating: [slim](https://github.com/slim-template/slim) *(Preferred)*, [haml](https://github.com/haml/haml), erb
-<<<<<<< HEAD
 
 
 
@@ -70,8 +69,7 @@ Use one of these 3 for templating: [slim](https://github.com/slim-template/slim)
 
 
 
-##Notes From Greg
+## Notes From Greg
+
 
 IF you run `rake db:seed` it will populate your database with some users and some articles. The articles are written by the editor users that are created, and all the passwords are `testtest` so you can log into those accounts.
-=======
->>>>>>> 29a87b9eeabf764efea45d7449bc312ed5d1fbf6
