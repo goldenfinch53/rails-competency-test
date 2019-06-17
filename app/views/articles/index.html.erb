@@ -1,0 +1,13 @@
+<div class='articles-index'>
+  <% @articles_grouped_by_category.each do |category, articles| %>
+    <div class='category'>
+    <h2><%= category %></h2>
+    <% articles.first(3).each do %>
+      <div class='article'>
+        <% link_to article_path(article), class: 'article-link' do %>
+          <span class='article-title'> <%= article.title %> </span><span class='by-line'>by: <%= article.author %> </span>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
