@@ -3,32 +3,46 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.articles-index{
+.articles-index, .articles-show{
   max-width: 1000px;
   margin: auto;
-  padding-top: 48px;
+  padding-top: 56px;
 }
 
 .article{
-  &:hover {
-    background-color: #5680E9
-  }
+
   height: 40px;
   a {
     text-decoration: none;
     
   }
-  .article-title {
-    color: black;
-    font-size: 1.2rem;
+  &:hover {
+    background-color: #5680E9;
+    .by-line,.article-title{
+      color: white;
+    }
   }
   .by-line {
-    float:right;
-    color: grey;
+    float: right;
   }
   
 }
 
+  .article-title {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .by-line {
+    font-size:0.8rem;
+    padding-bottom: 16px;
+    color: #5680E9;
+  }
+
 .category{
   height: 240px;
+  h2 {
+    color: #5680E9;
+  }
 }

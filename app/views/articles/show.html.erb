@@ -1,0 +1,11 @@
+<div class='articles-show'>
+  <span class='article-title'><%= @article.title %></span>
+  <div class='by-line'>
+    <span>By: <%= @article.user.email %></span>
+    <span>Category: <%= @article.category %></span>
+  </div>
+
+  <div class= 'article-content'>
+    <%= @article.content %>
+  </div>
+</div>
